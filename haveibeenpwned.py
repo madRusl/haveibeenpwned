@@ -24,3 +24,5 @@ def hash_check():
 
 if hash_check() is False:
     print('Password hasn\'t been leaked')
+
+password = None
