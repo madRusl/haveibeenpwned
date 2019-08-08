@@ -15,7 +15,7 @@ output = s.splitlines()
 def hash_check():
     for i in output:
         if password_hash_root == i.split(':', 1)[0]:
-            print(f'Password \'{password}\' has been leaked')
+            print(f'Your password \'{password}\' has been leaked')
             print('Hash digest matched', i.split(':', 1)[1], 'times')
             return True
         else:
